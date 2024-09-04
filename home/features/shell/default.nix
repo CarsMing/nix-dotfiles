@@ -62,22 +62,6 @@
       t = ''
         tmux attach -t "$(tmux ls -F '#{session_name}:#{window_name}' | fzf)"
       '';
-      awsx = ''
-        if test -z $AWSX_PROFILES
-            set -gx AWS_PROFILES (aws configure list-profiles | string split0)
-        end
-
-        set -gx AWS_PROFILE (echo $AWS_PROFILES | fzf)
-
-        echo "Using profile: $AWS_PROFILE"
-        aws sts get-caller-identity &> /dev/null
-        if test $status != 0
-            echo "AWS SSO Session expired. Logging in..."
-            aws sso login
-        else
-            echo "Found valid SSO session, using it!"
-        end
-      '';
     };
   };
 
@@ -103,10 +87,6 @@
   };
 
   home.shellAliases = {
-    "wgup-staging" = "wg-quick up ~/.config/wireguard/staging.conf";
-    "wgdown-staging" = "wg-quick down ~/.config/wireguard/staging.conf";
     "cat" = "bat -pp";
-    "tailscale" = "/Applications/Tailscale.app/Contents/MacOS/Tailscale";
-    "k" = "kubectl";
   };
 }

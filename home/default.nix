@@ -9,10 +9,8 @@
     ./features/packages
     ./features/git
     ./features/nvim
-    ./features/secrets
     ./features/tmux
     ./features/wezterm
-    ./features/go
   ];
 
   # This value determines the Home Manager release that your configuration is
@@ -27,7 +25,7 @@
   nixpkgs.config.allowUnfreePredicate = _: true;
 
   home.sessionVariables = {
-    EDITOR = "nvim";
+    EDITOR = "vim";
   };
 
   # Let Home Manager install and manage itself.

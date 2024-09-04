@@ -10,8 +10,8 @@
     ./default.nix
   ];
 
-  home.username = "kevin";
-  home.homeDirectory = lib.mkForce "/Users/kevin";
+  home.username = "C.Minga";
+  home.homeDirectory = lib.mkForce "/Users/C.Minga";
 
   home.packages = with pkgs; [
     skhd

@@ -13,14 +13,14 @@
     ../shared/fonts.nix
   ];
 
-  users.users.kevin = {
-    home = "/Users/kevin";
+  users.users."C.Minga" = {
+    home = "/Users/C.Minga";
     shell = "${pkgs.fish}/bin/fish";
   };
 
-  home-manager.users.kevin = { 
+  home-manager.users."C.Minga" = {
     imports = [
-      ../../home/phobos.nix
+      ../../home/carstensmac.nix
     ];
   };
 
@@ -63,7 +63,7 @@
     #   extra-platforms = x86_64-darwin aarch64-darwin
     # '';
     
-    settings.trusted-users = [ "root" "kevin" ];
+    settings.trusted-users = [ "root" "C.Minga" ];
   };
 
 }

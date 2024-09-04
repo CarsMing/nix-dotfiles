@@ -11,24 +11,17 @@
     };
 
     taps = [
-      "platformsh/tap"
-      "aws/tap"
     ];
 
     brews = [
-      "platformsh-cli"
       "docker-credential-helper"
-      "argocd"
-      "dnsmasq"
-      "eks-node-viewer"
       "grpcurl"
       "exiftool"
     ];
 
     casks = [
       "bruno"
-      "rancher"
-      "orbstack"
+      "spotify"
     ];
   };
 }
