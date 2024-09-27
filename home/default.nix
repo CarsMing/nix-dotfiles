@@ -5,12 +5,14 @@
 
   imports = [
     flake.inputs.sops-nix.homeManagerModule
+    #./features/keybindings
     ./features/shell
     ./features/packages
     ./features/git
     ./features/nvim
     ./features/tmux
     ./features/wezterm
+    ./features/volta
   ];
 
   # This value determines the Home Manager release that your configuration is

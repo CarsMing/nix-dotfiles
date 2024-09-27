@@ -6,7 +6,6 @@
 , ...
 }: {
   imports = [
-    ../shared/yabai.nix
     ../shared/skhd.nix
     ../shared/brew.nix
     ../shared/system.nix
@@ -52,17 +51,6 @@
   # Nix config from https://github.com/DeterminateSystems/nix-installer
 
   nix = {
-    # package = pkgs.nixVersions.nix_2_23;
-    # extraOptions = ''
-    #   experimental-features = nix-command flakes auto-allocate-uids
-    #   builders-use-substitutes = true
-    #   auto-allocate-uids = true
-    #   builders = @/etc/nix/machines
-    #   log-lines = 100
-    #   nix-path = nixpkgs=${flake.inputs.nixpkgs}
-    #   extra-platforms = x86_64-darwin aarch64-darwin
-    # '';
-    
     settings.trusted-users = [ "root" "C.Minga" ];
   };
 

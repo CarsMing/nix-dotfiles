@@ -9,6 +9,11 @@ Requirements:
 Clone the repository in a specific path you want via https
 
 ## Step 2
+Install Homebrew as it's relevant for the packages configured within the `brew.nix`
+
+- https://docs.brew.sh/Installation
+
+## Step 3
 Initialise the setup with the following command:
 ```bash
 nix run nix-darwin -- switch --flake /prefered/path/to/nix-dotfiles
@@ -16,14 +21,16 @@ nix run nix-darwin -- switch --flake /prefered/path/to/nix-dotfiles
 
 Now your setup is running. It can take some minutes cause the cache and all necessary nix pkgs will initialized
 
-## Step 3
+## Step 4
+
+Install node
+```bash
+volta install node@22.2
+```
+
+## Later changes
 Your setup should be setup now.
 Further changes can be applied with
 ```bash
 darwin-rebuild switch --flake /prefered/path/to/nix-dotfiles/
 ```
-
-## Step 4
-Install Homebrew. It's sometimes needed for specific packages. You don't have to take care about updates e.g. It will be automatically applied and managed by nix
-
-- https://docs.brew.sh/Installation

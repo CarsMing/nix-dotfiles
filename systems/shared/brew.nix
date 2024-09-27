@@ -20,8 +20,10 @@
     ];
 
     casks = [
-      "bruno"
       "spotify"
+      "mysql-shell"
+      "alt-tab"
+      "keyboard-maestro"
     ];
   };
 }

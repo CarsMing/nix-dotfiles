@@ -43,7 +43,7 @@
       set -gx VOLTA_HOME $HOME/.volta
       fish_add_path $VOLTA_HOME/bin
 
-      # Krew
+      # KrewKrewKrewKrew@
       fish_add_path $HOME/.krew/bin
 
       # Go Binaries
@@ -88,5 +88,8 @@
 
   home.shellAliases = {
     "cat" = "bat -pp";
+    "core" = "cd ~/work/shopware-business-platform/Components/Core";
+    "account" = "cd ~/work/shopware-business-platform/Components/Account2";
+    "frontend" = "cd ~/work/shopware-business-platform/Components/Frontend/src";
   };
 }
