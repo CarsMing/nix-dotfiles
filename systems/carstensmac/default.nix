@@ -12,12 +12,12 @@
     ../shared/fonts.nix
   ];
 
-  users.users."C.Minga" = {
-    home = "/Users/C.Minga";
+  users.users."cminga" = {
+    home = "/Users/cminga";
     shell = "${pkgs.fish}/bin/fish";
   };
 
-  home-manager.users."C.Minga" = {
+  home-manager.users."cminga" = {
     imports = [
       ../../home/carstensmac.nix
     ];
@@ -51,7 +51,7 @@
   # Nix config from https://github.com/DeterminateSystems/nix-installer
 
   nix = {
-    settings.trusted-users = [ "root" "C.Minga" ];
+    settings.trusted-users = [ "root" "cminga" ];
   };
 
 }

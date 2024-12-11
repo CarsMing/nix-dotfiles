@@ -24,6 +24,7 @@
       "mysql-shell"
       "alt-tab"
       "keyboard-maestro"
+      "postman"
     ];
   };
 }
