@@ -17,6 +17,9 @@
       "docker-credential-helper"
       "grpcurl"
       "exiftool"
+      "direnv"
+      "git"
+      "localtunnel"
     ];
 
     casks = [
@@ -25,6 +28,10 @@
       "alt-tab"
       "keyboard-maestro"
       "postman"
+      "insomnia"
+      "gimp"
+      "babeledit"
+      "cursor"
     ];
   };
 }
