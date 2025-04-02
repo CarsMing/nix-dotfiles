@@ -22,6 +22,7 @@
     wireguard-tools
     mysql80
     gnused
+    uv
   ];
 }
 
